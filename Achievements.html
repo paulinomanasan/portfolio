@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Paulino Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900"><span></span></div>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="Work Experience.html">Work Experience</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="Skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="Achievements.html">Achievements</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="Contact Me.html">Contact Me</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="Work Experience.html">Work Experience</a>
+                <a href="Skills.html">Skills</a>
+                <a href="Achievements.html">Achievements</a>
+                <a href="Contact Me.html">Contact Me</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="main.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900"><h3><i class="fa-solid fa-trophy"></i> Achievements</h3></div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000"><ul>
+                        <div data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000"><ul>
+                       <p></p> <i class="fa-solid fa-medal"></i> Promoted to Quality Assurance Analyst – Earned recognition for delivering outstanding customer service and consistently exceeding expectations.
+                      <p></p>  <i class="fa-solid fa-users"></i> Enhanced Team Performance – Provided hands-on coaching, actionable feedback, and guidance to improve service quality and efficiency.
+                       <P></P> <i class="fa-solid fa-globe"></i> Supported Global Accounts – Delivered exceptional customer support for major brands like Amazon.com, Amazon UK, and DoorDash, ensuring seamless experiences for users worldwide.
+                        <p></p><i class="fa-solid fa-chart-simple"></i> Consistently Exceeded KPIs – Maintained high performance in key metrics, including response time, resolution rate, and customer satisfaction.
+                    </ul></p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="#" ><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/paulino-manasan-4027a316a/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <a href="https://drive.google.com/file/d/1HGaxvipISsn68ZcPr731XTPkKzjEyNM9/view?usp=drive_link" download>
+                            <button>Download CV</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
+
+
